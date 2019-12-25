@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   Future<List<Todo>> _getItems() async {
     var data =
-        await http.get("https://5e020dcc63d08b0014a28654.mockapi.io/listitems");
+        await http.get("");
     var jsonData = json.decode(data.body);
     List<Todo> todos = [];
     for (var t in jsonData) {
