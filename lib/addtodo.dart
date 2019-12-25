@@ -19,7 +19,7 @@ class _AddTodoState extends State<AddTodo> {
   String _description;
 
   Future<Todo> _postTodo() async {
-    var url = "http://5e020dcc63d08b0014a28654.mockapi.io/listitems";
+    var url = "";
     await http.post(url, body: {'title': _title, 'description': _description});
 
     return null;
